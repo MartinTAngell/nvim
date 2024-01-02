@@ -9,7 +9,7 @@ local keymap = vim.keymap
 -- gcc comments or uncomments a line
 
 -- General
-keymap.set("i", "jk", "<ESC>", { desc = "Exits insert mode if jk is typed"})
+keymap.set("i", "jk", "<ESC>", { desc = "Exits insert mode if jk is typed" })
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Removes highlights from searching" })
 
 --Nvim-Tree
@@ -43,3 +43,5 @@ keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy fin
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })
 
+-- VimTex
+keymap.set("n", "<leader>ll", "<cmd>VimtexCompile<CR>", { desc = "Compiles a Tex file" })
