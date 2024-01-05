@@ -36,3 +36,6 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.iskeyword:append("-")
+
+-- Making nvim not suck
+opt.swapfile = false
