@@ -45,3 +45,11 @@ keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find s
 
 -- VimTex
 keymap.set("n", "<leader>ll", "<cmd>VimtexCompile<CR>", { desc = "Compiles a Tex file" })
+
+-- Markdown
+keymap.set(
+	"n",
+	"<leader>m",
+	"<cmd>MarkdownPreviewToggle<CR>",
+	{ desc = "Opens a preview of the current markdown code" }
+)
