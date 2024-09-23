@@ -34,7 +34,7 @@ return {
 				"html", -- LSP for HTML
 				"jsonls", -- LSP for JSON
 				"jdtls", -- LSP for Java
-				"tsserver", -- LSP for Javascript, Typescript, and their React counterparts
+				"ts_ls", -- LSP for Javascript, Typescript, and their React counterparts
 				"texlab", -- LSP for LaTeX
 				"lua_ls", -- LSP for Lua
 				"marksman", -- LSP for Markdown
