@@ -19,3 +19,8 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", {desc = "Close tab"})
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", {desc = "Next tab"})
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", {desc = "Previous tab"})
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", {desc = "Current file in new tab"})
+
+-- File Explorer
+keymap.set("n", "<leader>ee", "<cmd>NvimTreeToggle<CR>", {desc = "Toggle file explorer"})
+keymap.set("n", "<leader>ef", "<cmd>NvimTreeFocus<CR>", {desc = "Focus file explorer"})
+keymap.set("n", "<leader>er", "<cmd>NvimTreeRefresh<CR>", {desc = "Refresh file explorer"})
