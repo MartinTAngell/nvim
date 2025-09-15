@@ -1,37 +1,29 @@
 return {
 	"stevearc/conform.nvim",
-	lazy = true,
-	event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
+	event = { "BufReadPre", "BufNewFile" },
 	config = function()
 		local conform = require("conform")
 
 		conform.setup({
 			formatters_by_ft = {
-				javascript = { "prettier" },
-				typescript = { "prettier" },
-				javascriptreact = { "prettierd" },
-				typescriptreact = { "prettierd" },
-				css = { "prettierd" },
-				html = { "prettierd" },
-				json = { "prettierd" },
-				yaml = { "prettierd" },
-				markdown = { "prettierd" },
+				bash = { "beautysh" },
+				cpp = { "clang-format" },
+				css = { "prettier" },
 				lua = { "stylua" },
-				python = { "black" },
-			},
-			format_on_save = {
-				lsp_fallback = true,
-				async = false,
-				timeout_ms = 1000,
+				tex = { "tex-fmt" },
+				html = { "prettier" },
+				json = { "prettier" },
+				typescript = { "prettier" },
+				markdown = { "prettier" },
 			},
 		})
 
-		vim.keymap.set({ "n", "v" }, "<leader>f", function()
+		vim.keymap.set({ "n", "v" }, "<leader>fh", function()
 			conform.format({
 				lsp_fallback = true,
 				async = false,
 				timeout_ms = 1000,
 			})
-		end, { desc = "Format file or range (in visual mode)" })
+		end, { desc = "Format file or range" })
 	end,
 }
