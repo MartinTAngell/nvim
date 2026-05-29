@@ -5,4 +5,4 @@ keymap("n", "<leader>ee", "<cmd>Neotree source=filesystem action=focus position=
 keymap("n", "<leader>ef", "<cmd>Neotree source=filesystem action=focus position=right<CR>",
     { desc = "Focus on file manager on right" })
 keymap("n", "<leader>nh", "<cmd>nohlsearch<CR>", { desc = "Unhighlight from search" })
-keymap("n", "<Leader>fh", ":lua vim.lsp.buf.format()<CR>", { silent = true })
+keymap("n", "<Leader>fh", "<cmd>lua vim.lsp.buf.format()<CR>", { silent = true })
