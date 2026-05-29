@@ -1,6 +1,6 @@
 -- Catppuccin
 vim.pack.add { { src = "https://github.com/catppuccin/nvim", name = "catppuccin" } }
-vim.cmd.colorscheme("catppuccin-nvim")
+vim.cmd.colorscheme("catppuccin-mocha")
 
 -- Neotree
 vim.pack.add({
@@ -27,6 +27,11 @@ require("neo-tree").setup({
 })
 
 -- Pack manager
-vim.pack.add({
-  "https://github.com/mplusp/pack-manager.nvim"
-})
+vim.pack.add({"https://github.com/mplusp/pack-manager.nvim"})
+
+-- Vim Tmux Navigator
+vim.pack.add({"https://github.com/christoomey/vim-tmux-navigator"})
+
+-- Autopairs
+vim.pack.add({"https://github.com/windwp/nvim-autopairs"})
+require("nvim-autopairs").setup()

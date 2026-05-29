@@ -2,4 +2,5 @@ vim.g.mapleader = " "
 
 require("options")
 require("keybinds")
-require("plugins")
+require("plugins.plugins")
+require("plugins.lualine")
