@@ -4,13 +4,13 @@ vim.cmd.colorscheme("catppuccin-mocha")
 
 -- Neotree
 vim.pack.add({
-  {
-    src = 'https://github.com/nvim-neo-tree/neo-tree.nvim',
-    version = vim.version.range('3')
-  },
-  "https://github.com/nvim-lua/plenary.nvim",
-  "https://github.com/MunifTanjim/nui.nvim",
-  "https://github.com/nvim-tree/nvim-web-devicons",
+    {
+        src = 'https://github.com/nvim-neo-tree/neo-tree.nvim',
+        version = vim.version.range('3')
+    },
+    "https://github.com/nvim-lua/plenary.nvim",
+    "https://github.com/MunifTanjim/nui.nvim",
+    "https://github.com/nvim-tree/nvim-web-devicons",
 })
 
 require("neo-tree").setup({
@@ -21,17 +21,24 @@ require("neo-tree").setup({
     },
     window = {
         mappings = {
-            ["P"] = "navigate_up", 
+            ["P"] = "navigate_up",
         }
     }
 })
 
 -- Pack manager
-vim.pack.add({"https://github.com/mplusp/pack-manager.nvim"})
+vim.pack.add({ "https://github.com/mplusp/pack-manager.nvim" })
 
 -- Vim Tmux Navigator
-vim.pack.add({"https://github.com/christoomey/vim-tmux-navigator"})
+vim.pack.add({ "https://github.com/christoomey/vim-tmux-navigator" })
 
 -- Autopairs
-vim.pack.add({"https://github.com/windwp/nvim-autopairs"})
+vim.pack.add({ "https://github.com/windwp/nvim-autopairs" })
 require("nvim-autopairs").setup()
+
+-- Mason
+vim.pack.add({
+    { src = "https://github.com/mason-org/mason.nvim" },
+})
+
+require("mason").setup({})
