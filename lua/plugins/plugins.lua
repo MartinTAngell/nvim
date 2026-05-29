@@ -53,7 +53,6 @@ require('blink.cmp').setup({
     signature = { enabled = true },
     keymap = {
         preset = "default",
-        ["<C-space>"] = {},
         ["<Tab>"] = { "select_next", "fallback" },
         ["<S-Tab>"] = { "select_prev", "fallback" },
         ["<C-y>"] = { "show", "show_documentation", "hide_documentation" },
@@ -65,7 +64,7 @@ require('blink.cmp').setup({
         ["<C-f>"] = { "scroll_documentation_up", "fallback" },
         ["<C-l>"] = { "snippet_forward", "fallback" },
         ["<C-h>"] = { "snippet_backward", "fallback" },
-        -- ["<C-e>"] = { "hide" },
+        ["<C-space>"] = { "show", "show_documentation", "hide_documentation" },
     },
 
     appearance = {

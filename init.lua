@@ -7,3 +7,5 @@ require("plugins.plugins")
 require("plugins.lualine")
 
 require("lsp")
+
+require("autocmds")
