@@ -1,5 +1,4 @@
 local opt = vim.opt
-local diagnostic = vim.diagnostic
 
 -- Clipboard and mouse 
 opt.clipboard = "unnamedplus"
@@ -39,12 +38,3 @@ opt.shiftwidth = 4
 opt.softtabstop = 4
 opt.autoindent = true
 opt.smartindent = true
-
--- Diagnostics
-diagnostic.config({
-    virtual_text = true,
-    float = {
-        border = "rounded",
-        source = true
-    }
-})
