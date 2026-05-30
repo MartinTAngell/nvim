@@ -137,3 +137,6 @@ dashboard.section.buttons.val = {
 }
 
 require("alpha").setup(dashboard.config)
+
+-- Vim Maximizer
+vim.pack.add { { src = "https://github.com/szw/vim-maximizer" } }
