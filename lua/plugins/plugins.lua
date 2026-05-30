@@ -91,3 +91,49 @@ require('blink.cmp').setup({
 
 -- Friendly Snippets
 vim.pack.add { { src = "https://github.com/rafamadriz/friendly-snippets" } }
+
+-- Alpha
+vim.pack.add { { src = "https://github.com/goolord/alpha-nvim" } }
+
+local dashboard = require("alpha.themes.dashboard")
+
+dashboard.section.header.val = {
+    [[ ┌─────────────────────────────────────────────────────────────────┐ ]],
+    [[ │                     ,                                           │ ]],
+    [[ │                     \`-._           __                          │ ]],
+    [[ │                      \\  \-..____,.'  `.                        │ ]],
+    [[ │                       :  )       :      :\                      │ ]],
+    [[ │                        ;'        '   ;  | :                     │ ]],
+    [[ │                        )..      .. .:.`.; :                     │ ]],
+    [[ │                       /::...  .:::...   ` ;                     │ ]],
+    [[ │                       `:o>   /\o_>        : `.                  │ ]],
+    [[ │                      `-`.__ ;   __..--- /:.   \                 │ ]],
+    [[ │                     ==== \_/   ;=====_.':.     ;                │ ]],
+    [[ │                       ,/'`--'...`--....        ;                │ ]],
+    [[ │                            ;                    ;               │ ]],
+    [[ │                        . '                       ;              │ ]],
+    [[ │                      .'     ..     ,      .       ;             │ ]],
+    [[ │                     :       ::..  /      ;::.     |             │ ]],
+    [[ │                    /      `.;::.  |       ;:..    ;             │ ]],
+    [[ │                   :         |:.   :       ;:.    ;              │ ]],
+    [[ │                   :         ::     ;:..   |.    ;               │ ]],
+    [[ │                    :       :;      :::....|     |               │ ]],
+    [[ │                    /\     ,/ \      ;:::::;     ;               │ ]],
+    [[ │                  .:. \:..|    :     ; '.--|     ;               │ ]],
+    [[ │                 ::.  :''  `-.,,;     ;'   ;     ;               │ ]],
+    [[ │              .-'. _.'\      / `;      \,__:      \              │ ]],
+    [[ │              `---'    `----'   ;      /    \,.,,,/              │ ]],
+    [[ │                                 `----`                          │ ]],
+    [[ └─────────────────────────────────────────────────────────────────┘ ]],
+    [[                              Neovim                                 ]],
+}
+
+dashboard.section.buttons.val = {
+
+    dashboard.button("e", "  > New File", "<cmd>ene<CR>"),
+    dashboard.button("SPC ee", "  > Toggle file explorer", "<cmd>Neotree source=filesystem action=focus position=right toggle<CR>"),
+    dashboard.button("SPC ff", "󰱼  > Find File", "<cmd>Telescope find_files<CR>"),
+    dashboard.button("q", " > Quit NVIM", "<cmd>qa<CR>"),
+}
+
+require("alpha").setup(dashboard.config)
