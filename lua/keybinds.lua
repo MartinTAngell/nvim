@@ -1,9 +1,9 @@
 local keymap = vim.keymap.set
 
 keymap("n", "<leader>ee", "<cmd>Neotree source=filesystem action=focus position=right toggle<CR>",
-    { desc = "Toggle file manager on right" })
+  { desc = "Toggle file manager on right" })
 keymap("n", "<leader>ef", "<cmd>Neotree source=filesystem action=focus position=right<CR>",
-    { desc = "Focus on file manager on right" })
+  { desc = "Focus on file manager on right" })
 keymap("n", "<leader>nh", "<cmd>nohlsearch<CR>", { desc = "Unhighlight from search" })
 keymap("n", "<Leader>fh", "<cmd>lua vim.lsp.buf.format()<CR>", { silent = true })
 
@@ -18,4 +18,7 @@ keymap("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
-keymap("n", "<leader>sm", "<cmd>MaximizerToggle<CR>", { desc = "Maximize/minimize a split"})
+keymap("n", "<leader>sm", "<cmd>MaximizerToggle<CR>", { desc = "Maximize/minimize a split" })
+
+keymap("n", "<leader>mm", "<cmd>MarkdownPreviewToggle<CR>",
+  { desc = "Open a browser window with the current markdown file displayed " })
