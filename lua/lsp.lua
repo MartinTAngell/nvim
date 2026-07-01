@@ -3,7 +3,8 @@ vim.lsp.enable({
     "lua_ls",
     "texlab",
     "glsl_analyzer",
-    "marksman"
+    "marksman",
+    "jdtls"
 })
 
 vim.diagnostic.config({ virtual_text = true })
