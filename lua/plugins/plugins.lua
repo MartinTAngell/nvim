@@ -145,3 +145,6 @@ vim.pack.add { { src = "https://github.com/szw/vim-maximizer" } }
 -- Markdown Preview
 vim.pack.add { { src = "https://github.com/iamcco/markdown-preview.nvim" } }
 vim.fn["mkdp#util#install"]()
+
+vim.pack.add { "https://github.com/lervag/vimtex" }
+vim.g.vimtex_view_method = "zathura"

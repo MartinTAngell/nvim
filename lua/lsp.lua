@@ -4,7 +4,10 @@ vim.lsp.enable({
     "texlab",
     "glsl_analyzer",
     "marksman",
-    "jdtls"
+    "jdtls",
+    "ts_ls",
+    "basedpyright",
+    "ruff"
 })
 
 vim.diagnostic.config({ virtual_text = true })
