@@ -1,5 +1,11 @@
--- These configs are largely based on those presented in this video: https://www.youtube.com/watch?v=6pAG3BHurdM.
--- Considerable credit must be given to Josean Martinez for the general design of this setup and a significant amount of the contributing elements including keymaps and plugin selection.
+vim.g.mapleader = " "
 
-require("marty.core")
-require("marty.lazy")
+require("options")
+require("keybinds")
+
+require("plugins.plugins")
+require("plugins.lualine")
+
+require("lsp")
+
+require("autocmds")
